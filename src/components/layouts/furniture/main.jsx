@@ -1,28 +1,27 @@
 import React, { Component } from 'react';
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import '../../common/index.scss';
 import Slider from 'react-slick';
-import {Link} from 'react-router-dom';
 
 // Import custom components
 import SpecialProducts from "./special-products"
 import BlogSection from "../common/blogsection"
-import HeaderTwo from "../../common/headers/header-two"
+import HeaderTwo from "../../common/headers/header-one"
 import ThemeSettings from "../../common/theme-settings"
 import FooterOne from "../../common/footers/footer-one";
 
 class Furniture extends Component {
 
     componentDidMount() {
-        document.getElementById("color").setAttribute("href", `${process.env.PUBLIC_URL}/assets/css/color5.css` );
+        document.getElementById("color").setAttribute("href", `${process.env.PUBLIC_URL}/assets/css/color5.css`);
     }
 
-    render(){
+    render() {
         return (
             <div>
-                <HeaderTwo logoName={'logo/1.png'} />
+                <HeaderTwo logoName={'logo.png'} />
                 <Helmet>
-                    <title>MultiKart | Furniture Store</title>
+                    <title>PENDO INTERIORS</title>
                     <meta name="description" content="Multikart – Multipurpose eCommerce React Template is a multi-use React template. It is designed to go well with multi-purpose websites. Multikart Bootstrap 4 Template will help you run multiple businesses." />
                 </Helmet>
                 <section className="p-0 small-slider">
@@ -71,7 +70,7 @@ class Furniture extends Component {
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/furniture/2banner1.jpg`} alt=""
-                                                 className="img-fluid blur-up lazyload bg-img" />
+                                                className="img-fluid blur-up lazyload bg-img" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -87,7 +86,7 @@ class Furniture extends Component {
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/furniture/2banner2.jpg`} alt=""
-                                                 className="img-fluid blur-up lazyload bg-img" />
+                                                className="img-fluid blur-up lazyload bg-img" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -103,7 +102,7 @@ class Furniture extends Component {
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/furniture/2banner3.jpg`} alt=""
-                                                 className="img-fluid blur-up lazyload bg-img" />
+                                                className="img-fluid blur-up lazyload bg-img" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -159,7 +158,7 @@ class Furniture extends Component {
                 </section>
                 {/* Blog Section End*/}
 
-                <ThemeSettings/>
+                <ThemeSettings />
 
                 <FooterOne logoName={'logo/1.png'} />
             </div>
